@@ -119,7 +119,7 @@ a {
 
 @media (max-width: 575.99999px) {
   body {
-    font-size: 12px;
+    font-size: 9px;
   }
   input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
     font-size: 9px;
@@ -136,10 +136,10 @@ a {
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
   body {
-    font-size: 15px;
+    font-size: 11px;
   }
   input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
-    font-size: 12px;
+    font-size: 11px;
   }
   #resbutton{
     font-size: 18px;
@@ -153,10 +153,10 @@ a {
 
 @media (min-width: 768px) and (max-width: 991.99999px) {
   body {
-    font-size: 18px;
+    font-size: 14px;
   }
   input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
-    font-size: 15px;
+    font-size: 14px;
   }
   #resbutton{
     font-size: 22px;
@@ -168,7 +168,7 @@ a {
 
 @media (min-width: 992px) and (max-width: 1199.99999px) {
   body {
-    font-size: 21px;
+    font-size: 17px;
   }
   input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
     font-size: 17px;
@@ -183,7 +183,7 @@ a {
 
 @media (min-width: 1200px) {
   body {
-    font-size: 25px;
+    font-size: 20px;
   }
   input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
     font-size: 20px;
@@ -248,4 +248,8 @@ input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
 
 #reserveren .b{
  margin-bottom: 30px;
+}
+
+.rechts{
+  margin-left: 1vw;
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 :root {
     /** Colors */
     --c-zalmroze: hsla(14, 58%, 62%, 1);
@@ -15,5 +16,5 @@
 
     /**Fonts */
     --font-heading: Lato;
-    --font-body: Advent Pro;
+    --font-body: 'Montserrat', sans-serif;
 }
