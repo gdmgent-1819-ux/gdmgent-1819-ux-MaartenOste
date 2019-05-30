@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather:300,400,700,900');
+@import url('variables.css');
+@import url('components/grid.css');
+@import url('icons.css');
+@import url('components/carousel.css');
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-size: 100vw;
+  background-image: url(pictures/achtergrond-main-b.png);
+  background-color: var(--c-quaternary);
+  background-repeat: no-repeat;
+  font-family: var(--font-body);
+}
+
+nav #kleinscherm{
+  display: none;
+}
+
+@media (max-width: 959.99999999999px) {
+  nav ul { display: none; }
+  nav #kleinscherm { display: inline-block;
+  padding-left: 5vw;
+  }
+  
+}
+
+#introtext{
+  margin-top: 50vw;
+}
+
+header li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+header ul {
+  margin: 7px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#infobar {
+  color: white;
+  padding: 0px 10vw 0px 10vw;
+  font-size: 12px;
+  background-color: var(--c-zalmroze-lichter);
+  font-family: var(--font-heading);
+}
+
+#welkom {
+  margin-right: 23.5vw;
+}
+
+#navigatiebar {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 6px 10vw;
+  background-color: var(--c-zalmroze-lichtst);
+}
+
+#navigatiebar li {
+  margin-left: 20px;
+}
+
+#menu a:hover {
+  border-bottom: 2px solid white;
+}
+
+#home {
+  color: var(--c-secondary);
+}
+
+#home:hover {
+  border-bottom: 2px solid var(--c-secondary);
+}
+
+
+#logo {
+  max-block-size: 50px;
+  vertical-align: middle;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--c-primary);
+  padding: 12px 16px;
+  display: block;
+  font-size: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 575.99999px) {
+  body {
+    font-size: 9px;
+  }
+  .dropdown-content a {
+    font-size: 9px;
+  }
+  input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
+    font-size: 9px;
+  }
+  #resbutton{
+    font-size: 15px;
+  } 
+  #infobar {
+    font-size: 7px;
+  }
+  #navigatiebar{
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.99999px) {
+  body {
+    font-size: 11px;
+  }
+  .dropdown-content a {
+    font-size: 11px;
+  }
+  input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
+    font-size: 11px;
+  }
+  #resbutton{
+    font-size: 18px;
+  } 
+  #infobar {
+    font-size: 8px;
+    
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.99999px) {
+  body {
+    font-size: 14px;
+  }
+  .dropdown-content a {
+    font-size: 14px;
+  }
+  input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
+    font-size: 14px;
+  }
+  #resbutton{
+    font-size: 22px;
+  }
+  #infobar {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99999px) {
+  body {
+    font-size: 17px;
+  }
+  input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
+    font-size: 17px;
+  }
+  #resbutton{
+    font-size: 26px;
+  }
+  #infobar {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+  input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
+    font-size: 20px;
+  }
+  #resbutton{
+    font-size: 30px;
+  } 
+  #infobar {
+    font-size: 12px;
+  }
+}
+
+.backb{
+  background-color: var(--c-secondary);
+  color: white;
+}
+
+#conttop{
+  padding: 0;
+}
+
+.slideshow-container{
+  margin-top: 50px;
+}
+
+#food{
+  max-width: 100%;
+}
+
+#etenendrinken{
+  padding-top: 50px;
+}
+
+#etentext{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#googleLocatie {
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  align-content: center;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
+  font-family: var(--font-body);
+}
+
+#resbutton{
+  color: white;
+  background-color: var(--c-secondary);
+  font-family: var(--font-body);
+  font-weight: 800;
+  border-radius: 5px;
+  border: none;
+} 
+
+#resbutton:hover{
+  background-color: var(--c-primary);
+}
+
+#reserveren .b{
+ margin-bottom: 30px;
+}
+
+.rechts{
+  margin-left: 1vw;
+}
