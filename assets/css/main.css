@@ -248,6 +248,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
 
 #resbutton:hover{
   background-color: var(--c-primary);
+  cursor:pointer;
 }
 
 #reserveren .b{
