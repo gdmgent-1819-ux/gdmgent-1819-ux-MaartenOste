@@ -15,24 +15,49 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 
 function myMap() {
-  var mapProp= {
-    center:new google.maps.LatLng(50.791217, 3.918880),
-    zoom:13,
+  var mapProp = {
+    center: new google.maps.LatLng(50.791217, 3.918880),
+    zoom: 13,
   };
-  var resto = {lat: 50.791217, lng: 3.918880};
-  var map = new google.maps.Map(document.getElementById("googleLocatie"),mapProp);
-  var marker = new google.maps.Marker({position: resto, map: map});
+  var resto = {
+    lat: 50.791217,
+    lng: 3.918880
+  };
+  var map = new google.maps.Map(document.getElementById("googleLocatie"), mapProp);
+  var marker = new google.maps.Marker({
+    position: resto,
+    map: map
+  });
+}
+
+
+
+function verzonden() {
+  let vnaam = document.getElementById('voornaam').value;
+  let anaam = document.getElementById('achternaam').value;
+  let tel = document.getElementById('telefoon').value;
+  let mail = document.getElementById('mail').value;
+  let van = document.getElementById('van').value;
+  let tot = document.getElementById('tot').value;
+  if (vnaam && anaam && tel && mail && van && tot){
+    alert("je reservatie is succesvol geplaatst!");
   }
+    
+}
