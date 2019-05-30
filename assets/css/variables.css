@@ -1,26 +1,19 @@
-
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:300');
 :root {
-  /**
-   * Colour palette
-   */
-  --c-primary: hsl(190, 100%, 40%);
+    /** Colors */
+    --c-zalmroze: hsla(14, 58%, 62%, 1);
+    --c-zalmroze-lichter: hsla(14, 58%, 62%, .75);
+    --c-zalmroze-lichtst: hsla(14, 58%, 62%, .50);
+    --c-blauw-licht: rgb(62,82,163);
+    --c-blauw-donker: rgb(59,74,138);
 
-  /**
-   * Layout
-   */
-  --l-gutter: 1rem;
+    --c-primary: var(--c-zalmroze);
+    --c-secondary: var(--c-blauw-donker);
+    --c-tertiary: var(--c-zalmroze-lichter);
+    --c-quaternary: var(--c-zalmroze-lichtst);
+    --c-quinary: var(--c-);
 
-  /**
-   * Typography
-   */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
-
-  --t-headline: var(--t-primary);
-  --t-subtitle: var(--t-primary);
-  --t-body: var(--t-secondary);
-  --t-code: var(--t-tertiary);
+    /**Fonts */
+    --font-heading: Lato;
+    --font-body: Advent Pro;
 }
-
-

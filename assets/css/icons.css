@@ -1,0 +1,96 @@
+.fa {
+    margin: 0;
+    padding: 7px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 13%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    margin: 0;
+    background: #3B5998;
+    color: white;
+    padding-top: 5px;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+header .material-icons {
+    margin: 0;
+    padding: 0;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+#list {
+    color: white;
+    width: 100%
+}
+
+@media (max-width: 575.99999px) {
+    .fa {
+        width: 10px;
+    height: 10px;
+    }
+
+    header .material-icons {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99999px) {
+    .fa {
+        width: 12px;
+    height: 12px;
+    }
+
+    header .material-icons {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.99999px) {
+    .fa {
+        width: 14px;
+    height: 14px;
+    }
+
+    header .material-icons {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99999px) {
+    .fa {
+        width: 17px;
+    height: 17px;
+    }
+
+    header .material-icons {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fa {
+        width: 20px;
+        height: 20px;
+    }
+
+    header .material-icons {
+        font-size: 15px;
+    }
+}
