@@ -60,7 +60,7 @@ a {
 
 #navigatiebar {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   padding: 6px 10vw;
   background-color: var(--c-zalmroze-lichtst);
 }
@@ -81,17 +81,11 @@ a {
   border-bottom: 2px solid var(--c-secondary);
 }
 
-#logo {
-  vertical-align: middle;
-  margin-right: 6vw;
-}
 
 #logo {
   max-block-size: 50px;
-}
-
-#spacing {
-  margin-top: 5000px;
+  vertical-align: middle;
+  
 }
 
 .dropdown-content {
@@ -107,6 +101,7 @@ a {
   color: var(--c-primary);
   padding: 12px 16px;
   display: block;
+  font-size: 10px;
 }
 
 .dropdown-content a:hover {
@@ -119,6 +114,9 @@ a {
 
 @media (max-width: 575.99999px) {
   body {
+    font-size: 9px;
+  }
+  .dropdown-content a {
     font-size: 9px;
   }
   input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
@@ -138,6 +136,9 @@ a {
   body {
     font-size: 11px;
   }
+  .dropdown-content a {
+    font-size: 11px;
+  }
   input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
     font-size: 11px;
   }
@@ -153,6 +154,9 @@ a {
 
 @media (min-width: 768px) and (max-width: 991.99999px) {
   body {
+    font-size: 14px;
+  }
+  .dropdown-content a {
     font-size: 14px;
   }
   input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
