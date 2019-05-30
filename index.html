@@ -1,12 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eindopdracht UX</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PopPark</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="assets/css/pictures/logo klein.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
+    <header class="page-header">
+        <div class="container" id="conttop">
+            <div class="row" id="infobar">
+                <ul>
+                    <li id="welkom">
+                        Welkom bij PopPark!
+                    </li>
+                    <li>
+                        <a href="mailto:xxxxxxx@xxxxxxx.be">
+                            <i class="material-icons">
+                                mail_outline
+                            </i>
+                            PopPark@PopPark.be
+                        </a>
+                    </li>
+                    <li>
+                        <i class="material-icons">
+                            phone
+                        </i>
+                        000/00 00 00
+                    </li>
+                    <li><a target="_blank"
+                            href="https://www.google.be/maps/place/Geraardsbergen/@50.7804675,3.8524281,12z/data=!4m5!3m4!1s0x47c3a5ffa5c57515:0x40099ab2f4d5150!8m2!3d50.7707354!4d3.8751639">
+                            <i class="material-icons">
+                                place
+                            </i>
+                            Onkerzelestraat 280, 9500 Geraardsbergen
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row" id="navigatiebar">
+                <nav>
+                    <div class="col-1 offset-2" id="kleinscherm">
+                        <div class="dropdown">
+                            <i class="material-icons" id="list">
+                                list
+                            </i>
+                            <div class="dropdown-content">
+                                <a href="#accomodatie">accommodatie</a>
+                                <a href="#etenendrinken">eten en drinken</a>
+                                <a href="#praktisch">praktisch</a>
+                                <a href="#reserveren">reserveren</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="assets/css/pictures/logo klein.png" id="logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" id="home">home</a>
+                        </li>
+                        <span id="menu">
+                            <li>
+                                <a href="#accomodatie">accommodatie</a>
+                            </li>
+                            <li>
+                                <a href="#etenendrinken">eten en drinken</a>
+                            </li>
+                            <li>
+                                <a href="#praktisch">praktisch</a>
+                            </li>
+                            <li>
+                                <a href="#reserveren">reserveren</a>
+                            </li>
+                        </span>
+                </nav>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row" id="introtext">
+            <div class="col-8 offset-2">
+                <h1>Plezier voor jongeren</h1>
+                In vakantiedomein PopPark heeft elke jongere het naar zijn zin! Het park is gelegen in Geraardsbergen,
+                kort bij
+                het provinciaal domein "de Gavers". Als park richten wij ons vooral op jongeren en daarom organiseren
+                wij
+                allerlei activiteiten op maat van ons doelpubliek. Zo is er elke avond de mogelijkheid om uit te gaan in
+                onze
+                PartyForest. Hier zijn vele cafés en discotheken, ieder ingericht in verschillende thema's. Voor
+                iedereen wat
+                wils!
+                Overdag zijn er nog heel wat andere activiteiten om te doen.
+            </div>
+
+        </div>
+    </div>
+    <div class="container backb" id="accomodatie">
+        <div class="row" id="tekstcarousel">
+            <div class="col-8 offset-2">
+                <h1>Accomodatie</h1>
+                In vakantiedomein PopPark heeft elke jongere het naar zijn zin! Het park is gelegen in Geraardsbergen,
+                kort bij
+                het provinciaal domein "de Gavers". Als park richten wij ons vooral op jongeren en daarom organiseren
+                wij
+                allerlei activiteiten op maat van ons doelpubliek. Zo is er elke avond de mogelijkheid om uit te gaan in
+                onze
+                PartyForest. Hier zijn cafés en discotheken, ieder ingericht in verschillende thema's. Voor iedereen wat
+                wils! Overdag zijn er nog heel wat dingen om te doen.
+            </div>
+
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/css/pictures/carting.png" style="width:100%">
+                <div class="text">Carting</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/css/pictures/paintball.jpg" style="width:100%">
+                <div class="text">Paintball</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/css/pictures/zwembad.jpg" style="width:100%">
+                <div class="text">Zwembad</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <div class="container" id="etenendrinken">
+        <div class="row">
+            <div class="col-2 offset-1">
+                <img src="assets/css/pictures/burger.jpg" alt="burger" id="food">
+            </div>
+            <div class="col-6" id="etentext">
+                <h1>Eten en drinken</h1>
+                In vakantiedomein PopPark heeft elke jongere het naar zijn zin! Het park is gelegen in Geraardsbergen,
+                kort bij
+                het provinciaal domein "de Gavers". Als park richten wij ons vooral op jongeren en daarom organiseren
+                wij
+                allerlei activiteiten op maat van ons doelpubliek. Zo is er elke avond de mogelijkheid om uit te gaan in
+                onze
+                PartyForest. Hier zijn cafés en discotheken, ieder ingericht in verschillende thema's. Voor iedereen wat
+                wils! Overdag zijn er nog heel wat dingen om te doen.
+            </div>
+            <div class="col-2">
+                <img src="assets/css/pictures/pizza.jpg" alt="pizza" id="food">
+            </div>
+        </div>
+    </div>
+    <div class="container backb" id="praktisch">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h1>Praktisch</h1>
+                Adress: Onkerzelestraat 280, 9500 Geraardsbergen<br>
+                Telefoon: 000/00 00 00<br>
+                Mail: <a href="mailto:PopPark@PopPark.be">PopPark@PopPark.be</a>
+                <div id="googleLocatie" class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="reserveren">
+        <form method="POST">
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <h1>Reserveren</h1>
+                </div>
+            </div>
+
+            <div class="row b">
+                <div class="col-1 offset-2">
+                    <label for="vnaam">Voornaam:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="vnaam" placeholder="vul hier je voornaam in" required>
+
+                </div>
+                <div class="col-1 offset-1">
+                    <label for="anaam">Achternaam:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="anaam" placeholder="vul hier je achternaam in" required>
+                </div>
+            </div>
+
+            <div class="row b">
+                <div class="col-1 offset-2">
+                    <label for="tel">Telefoon:</label>
+                </div>
+                <div class="col-2">
+                    <input type="tel" name="tel" pattern="^[0-9s/]*$" placeholder="+32412/34 56 78" required>
+                </div>
+                <div class="col-1 offset-1">
+                    <label for="mail">e-mail:</label>
+                </div>
+                <div class="col-2">
+                    <input type="email" name="mail" placeholder="janjanssens@gmail.com" required>
+                </div>
+            </div>
+
+            <div class="row b">
+                <div class="col-1 offset-2">
+                    <label for="van">Van:</label>
+                </div>
+                <div class="col-2">
+                    <input type="date" name="van" required>
+                </div>
+                <div class="col-1 offset-1">
+                    <label for="tot">Tot:</label>
+                </div>
+                <div class="col-2">
+                    <input type="date" name="tot" required>
+                </div>
+            </div>
+            <div class="row b">
+                <div class="col-1 offset-9">
+                    <button type="submit" id="resbutton">RESERVEER</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src='assets/js/script.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHRqA4jbDJwOePIF0BKK6ua4DqwL7x3f8&callback=myMap">
+    </script>
 </body>
+
 </html>
