@@ -73,6 +73,17 @@ a {
   border-bottom: 2px solid white;
 }
 
+#reserverenlink{
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+#reserverenlink:hover{
+  background-color: green;
+}
+
 #home {
   color: var(--c-secondary);
 }
@@ -85,7 +96,7 @@ a {
 #logo {
   max-block-size: 50px;
   vertical-align: middle;
-  
+  margin-right: 3.7vw;
 }
 
 .dropdown-content {
@@ -128,8 +139,7 @@ a {
   #infobar {
     font-size: 7px;
   }
-  #navigatiebar{
-  }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
