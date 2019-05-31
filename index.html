@@ -65,12 +65,12 @@
 
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="index.html">
                                 <img src="assets/css/pictures/logo klein.png" id="logo">
                             </a>
                         </li>
                         <li>
-                            <a href="" id="home">home</a>
+                            <a href="index.html" id="home">home</a>
                         </li>
                         <span id="menu">
                             <li>
@@ -83,7 +83,7 @@
                                 <a href="#praktisch">praktisch</a>
                             </li>
                             <li>
-                                <a id="reserverenlink" href="#reserveren">reserveren</a>
+                                <a id="reserverenlink" href="reserveren.html">reserveren</a>
                             </li>
                         </span>
                 </nav>
@@ -92,6 +92,7 @@
         </div>
         </div>
     </header>
+    <main>
     <div class="container">
         <div class="row" id="introtext">
             <div class="col-8 offset-2">
@@ -179,70 +180,11 @@
             </div>
         </div>
     </div>
-
-    <div class="container" id="reserveren">
-        <form method="POST">
-            <div class="row">
-                <div class="col-8 offset-2">
-                    <h1>Reserveren</h1>
-                </div>
-            </div>
-
-            <div class="row b">
-                <div class="col-1 offset-2">
-                    <label for="vnaam">Voornaam:</label>
-                </div>
-                <div class="col-2">
-                    <input type="text" id="voornaam" name="vnaam" placeholder="Voornaam" required>
-
-                </div>
-                <div class="col-1 offset-1">
-                    <label for="anaam">Achternaam:</label>
-                </div>
-                <div class="col-2 rechts">
-                    <input type="text" id="achternaam" name="anaam" placeholder="Achternaam" required>
-                </div>
-            </div>
-
-            <div class="row b">
-                <div class="col-1 offset-2">
-                    <label for="tel">Telefoon:</label>
-                </div>
-                <div class="col-2">
-                    <input type="tel" id="telefoon" name="tel" pattern="^[0-9s+/]*$" placeholder="+32 123/45 67 89" required>
-                </div>
-                <div class="col-1 offset-1">
-                    <label for="mail">e-mail:</label>
-                </div>
-                <div class="col-2 rechts">
-                    <input type="email" id="mail" name="mail" placeholder="janjanssens@gmail.com" required>
-                </div>
-            </div>
-
-            <div class="row b">
-                <div class="col-1 offset-2">
-                    <label for="van">Van:</label>
-                </div>
-                <div class="col-2">
-                    <input type="date" id="van" name="van" required>
-                </div>
-                <div class="col-1 offset-1">
-                    <label for="tot">Tot:</label>
-                </div>
-                <div class="col-2 rechts">
-                    <input type="date" id="tot" name="tot" required>
-                </div>
-            </div>
-            <div class="row b">
-                <div class="col-1 offset-9">
-                    <button id="resbutton" onclick="verzonden()">RESERVEER</button>
-                </div>
-            </div>
-        </form>
-    </div>
+</main>
     <script src='assets/js/script.js'></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHRqA4jbDJwOePIF0BKK6ua4DqwL7x3f8&callback=myMap">
     </script>
+
 </body>
 
 </html>

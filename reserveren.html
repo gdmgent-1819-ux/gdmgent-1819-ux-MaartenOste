@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PopPark</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="assets/css/pictures/logo klein.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/reserveren.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="container" id="conttop">
+            <div class="row" id="infobar">
+                <ul>
+                    <li id="welkom">
+                        Welkom bij PopPark!
+                    </li>
+                    <li>
+                        <a href="mailto:xxxxxxx@xxxxxxx.be">
+                            <i class="material-icons">
+                                mail_outline
+                            </i>
+                            PopPark@PopPark.be
+                        </a>
+                    </li>
+                    <li>
+                        <i class="material-icons">
+                            phone
+                        </i>
+                        000/00 00 00
+                    </li>
+                    <li><a target="_blank"
+                            href="https://www.google.be/maps/place/Geraardsbergen/@50.7804675,3.8524281,12z/data=!4m5!3m4!1s0x47c3a5ffa5c57515:0x40099ab2f4d5150!8m2!3d50.7707354!4d3.8751639">
+                            <i class="material-icons">
+                                place
+                            </i>
+                            Onkerzelestraat 280, 9500 Geraardsbergen
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row" id="navigatiebar">
+                <nav>
+                    <div class="col-1 offset-2" id="kleinscherm">
+                        <div class="dropdown">
+                            <i class="material-icons" id="list">
+                                list
+                            </i>
+                            <div class="dropdown-content">
+                                <a href="index.html/#activiteiten">activiteiten</a>
+                                <a href="index.html#etenendrinken">eten en drinken</a>
+                                <a href="index.html#praktisch">praktisch</a>
+                                <a href="#reserveren">reserveren</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <img src="assets/css/pictures/logo klein.png" id="logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" id="home">home</a>
+                        </li>
+                        <span id="menu">
+                            <li>
+                                <a href="index.html#activiteiten">Activiteiten</a>
+                            </li>
+                            <li>
+                                <a href="index.html#etenendrinken">eten en drinken</a>
+                            </li>
+                            <li>
+                                <a href="index.html#praktisch">praktisch</a>
+                            </li>
+                            <li>
+                                <a id="reserverenlink" href="reserveren.html">reserveren</a>
+                            </li>
+                        </span>
+                </nav>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="reserveren">
+            <form method="POST">
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <h1>Reserveren</h1>
+                    </div>
+                </div>
+
+                <div class="row b">
+                    <div class="col-1 offset-2">
+                        <label for="vnaam">Voornaam:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="voornaam" name="vnaam" placeholder="Voornaam" required>
+
+                    </div>
+                    <div class="col-1 offset-1">
+                        <label for="anaam">Achternaam:</label>
+                    </div>
+                    <div class="col-2 rechts">
+                        <input type="text" id="achternaam" name="anaam" placeholder="Achternaam" required>
+                    </div>
+                </div>
+
+                <div class="row b">
+                    <div class="col-1 offset-2">
+                        <label for="tel">Telefoon:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="tel" id="telefoon" name="tel" pattern="^[0-9s+/]*$" placeholder="+32 123/45 67 89"
+                            required>
+                    </div>
+                    <div class="col-1 offset-1">
+                        <label for="mail">e-mail:</label>
+                    </div>
+                    <div class="col-2 rechts">
+                        <input type="email" id="mail" name="mail" placeholder="janjanssens@gmail.com" required>
+                    </div>
+                </div>
+
+                <div class="row b">
+                    <div class="col-1 offset-2">
+                        <label for="van">Van:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="date" id="van" name="van" required>
+                    </div>
+                    <div class="col-1 offset-1">
+                        <label for="tot">Tot:</label>
+                    </div>
+                    <div class="col-2 rechts">
+                        <input type="date" id="tot" name="tot" required>
+                    </div>
+                </div>
+                <div class="row b">
+                    <div class="col-1 offset-9">
+                        <button type="submit" id="resbutton" onclick="verzonden()">RESERVEER</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                        <img src="assets/css/pictures/achtergrond-main.jpg" class="onderkant">
+                </div>
+                <div class="col-2">
+                        <img src="assets/css/pictures/carting.jpg" class="onderkant">
+                </div>
+                <div class="col-2">
+                        <img src="assets/css/pictures/zwembad.jpg" class="onderkant">
+                </div>
+                <div class="col-2">
+                        <img src="assets/css/pictures/paintball.jpg" class="onderkant">
+                </div>
+                <div class="col-2">
+                        <img src="assets/css/pictures/achtergrond-main.jpg" class="onderkant">
+                </div>
+                <div class="col-2">
+                        <img src="assets/css/pictures/carting.jpg" class="onderkant">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src='assets/js/script.js'></script>
+</body>
