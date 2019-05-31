@@ -138,7 +138,10 @@ a {
   #infobar {
     font-size: 7px;
   }
-
+  .onderkant{
+    max-width: 100%;
+    height: 75px;
+}
 }
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
@@ -158,6 +161,10 @@ a {
     font-size: 8px;
     
   }
+  .onderkant{
+    max-width: 100%;
+    height: 100px;
+}
 
 }
 
@@ -177,6 +184,10 @@ a {
   #infobar {
     font-size: 9px;
   }
+  .onderkant{
+    max-width: 100%;
+    height: 130px;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1199.99999px) {
@@ -192,6 +203,11 @@ a {
   #infobar {
     font-size: 10px;
   }
+  .onderkant{
+    max-width: 100%;
+    height: 150px;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -206,6 +222,9 @@ a {
   } 
   #infobar {
     font-size: 12px;
+  }
+  .onderkant{
+    max-width: 100%;
   }
 }
 
@@ -243,9 +262,4 @@ input[type="text"], input[type="email"], input[type="date"], input[type="tel"]{
 
 .rechts{
   margin-left: 1vw;
-}
-
-.onderkant{
-    max-width: 100%;
-    height: 200px;
 }
